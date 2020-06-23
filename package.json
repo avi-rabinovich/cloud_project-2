@@ -7,11 +7,12 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rm -rf www/ || true",
     "build": "npm run clean && tsc && cp package.json www/package.json && mkdir www\\tmp && cd www && zip -r Archive.zip . && cd ..",
-    "dev": "ts-node-dev --respawn --transpileOnly ./src/server.ts"
+    "dev": "ts-node-dev --respawn --transpileOnly ./src/server.ts",
+    "start": "node ./src/server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/grutt/udacity-c2-image-filter.git"
+    "url": "git+https://github.com/avi-rabinovich/cloud_project-2.git"
   },
   "author": "",
   "license": "ISC",
